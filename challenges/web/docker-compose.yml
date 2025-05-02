@@ -1,0 +1,93 @@
+version: '3.8'
+
+services:
+  # Easy Challenges
+  cookie_monster:
+    build:
+      context: ./easy/cookie_monster
+      dockerfile: Dockerfile
+    ports:
+      - "8001:5000"
+    restart: unless-stopped
+
+  flagcombined:
+    build:
+      context: ./easy/flagcombined
+      dockerfile: Dockerfile
+    ports:
+      - "8002:80"
+    restart: unless-stopped
+
+  treasure_hunt:
+    build:
+      context: ./easy/treasure_hunt
+      dockerfile: Dockerfile
+    ports:
+      - "8003:80"
+    restart: unless-stopped
+
+  # Medium Challenges
+  cookie_64:
+    build:
+      context: ./medium/cookie_64
+      dockerfile: Dockerfile
+    ports:
+      - "8011:80"
+    restart: unless-stopped
+
+  echoes_of_machine:
+    build:
+      context: ./medium/echoes_of_machine
+      dockerfile: Dockerfile
+    ports:
+      - "8012:5000"
+    restart: unless-stopped
+
+  flagnet:
+    build:
+      context: ./medium/flagnet
+      dockerfile: Dockerfile
+    ports:
+      - "8013:80"
+    restart: unless-stopped
+
+  # Hard Challenges
+  blind_sqli:
+    build:
+      context: ./hard/blind_sqli
+      dockerfile: Dockerfile
+    ports:
+      - "8021:5000"
+    restart: unless-stopped
+
+  cookie_monsters_inc:
+    build:
+      context: ./hard/cookie_monsters_inc
+      dockerfile: Dockerfile
+    ports:
+      - "8022:5000"
+    restart: unless-stopped
+
+  polluted_url:
+    build:
+      context: ./hard/polluted_url
+      dockerfile: Dockerfile
+    ports:
+      - "8023:3000"
+    restart: unless-stopped
+
+  ssti:
+    build:
+      context: ./hard/ssti
+      dockerfile: Dockerfile
+    ports:
+      - "8024:5000"
+    restart: unless-stopped
+
+  xxe:
+    build:
+      context: ./hard/xxe
+      dockerfile: Dockerfile
+    ports:
+      - "8025:5000"
+    restart: unless-stopped

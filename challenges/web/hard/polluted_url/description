@@ -1,0 +1,17 @@
+You’re diving into the "Discount API," a service that hands out discount codes based on user roles. The API is picky about tokens and headers, but rumor has it there’s a flaw in how it handles roles. Can you pollute the pathways and trick it into giving you an admin-only discount code containing the flag?
+
+
+HINTS
+
+Hint 1: Getting Started (Basic Exploration)
+"Start by poking around the API. Try hitting /api/v1/info to see what it reveals. Does it give you any clues about how to use the /api/v1/discount endpoint?"
+
+Hint 2: Understanding Requirements (After Initial Request)
+"The /api/v1/discount endpoint seems to need a token and an API version header. Check the response from /api/v1/info again—does it leak anything useful? Also, try adding X-API-Version: v1 to your request headers."
+
+Hint 3: Token Authentication (After Noticing Token Requirement)
+"You need a valid token to get past the 'Forbidden' error. The /api/v1/info endpoint mentions a token in its debug message. Use token=secret123 in your query string and see what happens."
+Hint 4: Role Basics (After Passing Token Check)
+"With the right token and header, the API now cares about your role. Try role=guest or role=admin in the query string. What does it say? Does it hint at what role unlocks the discount?"
+Hint 5: Spotting the Flaw (After Testing Roles)
+"The API checks the role parameter, but it accepts multiple roles if you send role as an array (e.g., ?role=guest&role=admin). Notice how it handles the first and last roles differently. Could this be a loophole?"

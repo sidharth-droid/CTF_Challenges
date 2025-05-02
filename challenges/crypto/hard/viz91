@@ -1,0 +1,21 @@
+The Clockmaker’s Riddle
+
+In the heart of an ancient city, a reclusive clockmaker named Elias Tock 
+left behind a legacy shrouded in enigma. Known for his intricate timepieces, 
+Elias was rumored to guard a secret so profound that he encoded it within a 
+message only the sharpest minds could unravel. His workshop, now a crumbling
+ruin, yielded a single clue: a weathered parchment bearing strange text, 
+etched in a cipher that ticks like the hands of a clock.
+Our agents recovered the following ciphertext:
+pqJ/#{a0Z#qA3t1nnTi1P`+c;DB{J
+Whispers among cryptographers suggest Elias wove his obsession with time 
+into the very fabric of his cipher. Some say the 
+key lies in the rhythm of his craft—a phrase that echoes the 
+relentless march of seconds, minutes, and hours for him the time is the key. Others believe it’s 
+tied to the tools of his trade, a sequence as vital as the gears he once turned.
+Your task is to decode this message and uncover Elias’s secret. The flag awaits within, 
+locked in the past, ticking toward revelation. Submit it in the standard format: FLAG{...}.
+
+Hint:
+
+The clockmaker’s secret turns with the hands that measure it—look to what unlocks the passage of moments.

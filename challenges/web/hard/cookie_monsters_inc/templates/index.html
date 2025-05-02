@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechCorp - Customer Feedback</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        :root {
+            --primary: #4834d4;
+            --secondary: #6ab04c;
+            --dark: #130f40;
+            --light: #f5f6fa;
+            --danger: #eb4d4b;
+        }
+        
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--light);
+            color: var(--dark);
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        header {
+            background-color: white;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px 0;
+        }
+        
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            font-weight: bold;
+            font-size: 1.5rem;
+            color: var(--primary);
+        }
+        
+        .logo i {
+            margin-right: 10px;
+            font-size: 1.8rem;
+        }
+        
+        .nav-links {
+            display: flex;
+            list-style: none;
+        }
+        
+        .nav-links li {
+            margin-left: 20px;
+        }
+        
+        .nav-links a {
+            text-decoration: none;
+            color: var(--dark);
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        
+        .nav-links a:hover {
+            color: var(--primary);
+        }
+        
+        .hero {
+            background-image: linear-gradient(to right, var(--primary), #686de0);
+            color: white;
+            padding: 60px 0;
+            text-align: center;
+        }
+        
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+        
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin: 0 auto 30px;
+            opacity: 0.9;
+        }
+        
+        .btn {
+            display: inline-block;
+            background-color: var(--secondary);
+            color: white;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            font-size: 1rem;
+            font-weight: 500;
+            transition: all 0.3s;
+        }
+        
+        .btn:hover {
+            background-color: #5d9643;
+            transform: translateY(-3px);
+        }
+        
+        .feedback-form {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            padding: 40px;
+            margin: 50px auto;
+            max-width: 800px;
+        }
+        
+        .form-title {
+            text-align: center;
+            margin-bottom: 30px;
+            color: var(--primary);
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 500;
+        }
+        
+        .form-control {
+            width: 100%;
+            padding: 12px 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 1rem;
+            transition: border-color 0.3s;
+        }
+        
+        .form-control:focus {
+            border-color: var(--primary);
+            outline: none;
+        }
+        
+        textarea.form-control {
+            min-height: 150px;
+            resize: vertical;
+        }
+        
+        .form-row {
+            display: flex;
+            gap: 20px;
+        }
+        
+        .form-row .form-group {
+            flex: 1;
+        }
+        
+        .btn-submit {
+            background-color: var(--primary);
+            width: 100%;
+            padding: 15px;
+            font-size: 1.1rem;
+        }
+        
+        .btn-submit:hover {
+            background-color: #3d2bb5;
+        }
+        
+        footer {
+            background-color: var(--dark);
+            color: white;
+            text-align: center;
+            padding: 30px 0;
+            margin-top: 50px;
+        }
+        
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+        
+        .footer-links a {
+            color: white;
+            margin: 0 15px;
+            font-size: 1.2rem;
+            transition: color 0.3s;
+        }
+        
+        .footer-links a:hover {
+            color: var(--secondary);
+        }
+        
+        .view-feedback-link {
+            display: block;
+            text-align: center;
+            margin-top: 20px;
+            color: var(--primary);
+            text-decoration: none;
+        }
+        
+        .view-feedback-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <i class="fas fa-comment-dots"></i>
+                    <span>TechCorp Feedback</span>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/feedback">View Feedback</a></li>
+                    <li><a href="/admin/login">Admin</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <section class="hero">
+        <div class="container">
+            <h1>We Value Your Feedback</h1>
+            <p>Help us improve our products and services by sharing your thoughts and experiences.</p>
+            <a href="#feedback-form" class="btn">Submit Feedback</a>
+        </div>
+    </section>
+    
+    <div class="container">
+        <div class="feedback-form" id="feedback-form">
+            <h2 class="form-title">Share Your Feedback</h2>
+            <form action="/submit_feedback" method="post">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" class="form-control" required>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="product">Product</label>
+                    <select id="product" name="product" class="form-control" required>
+                        <option value="">Select a product</option>
+                        <option value="Security Suite">Security Suite</option>
+                        <option value="Cloud Storage">Cloud Storage</option>
+                        <option value="Project Management">Project Management</option>
+                        <option value="Communication Tools">Communication Tools</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="feedback">Your Feedback</label>
+                    <textarea id="feedback" name="feedback" class="form-control" required></textarea>
+                </div>
+                
+                <button type="submit" class="btn btn-submit">Submit Feedback</button>
+            </form>
+            
+            <a href="/feedback" class="view-feedback-link">View Previous Feedback</a>
+        </div>
+    </div>
+    
+    <footer>
+        <div class="container">
+            <p>TechCorp &copy; 2023 - All Rights Reserved</p>
+            <div class="footer-links">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+            <p><small>This site is part of a security challenge. No real customer data is stored.</small></p>
+        </div>
+    </footer>
+</body>
+</html>

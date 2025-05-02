@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ECHOES OF THE MACHINE</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <!-- Import VT323 font for retro vibe -->
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1>CYBERMART TERMINAL</h1>
+    <p>QUERY THE QUANTUM WIDGET SYSTEM</p>
+    
+    <form method="POST" action="/">
+        <input type="text" name="query" placeholder="> TYPE QUERY (E.G., STATUS QUANTUM WIDGET)" style="width: 300px;">
+        <input type="submit" value="EXECUTE">
+    </form>
+    
+    <h2>RESPONSE:</h2>
+    <div id="response">
+        {{ response | safe }}
+    </div>
+    
+    <h2>INPUT REVIEW DATA</h2>
+    <form method="POST" action="/submit_review">
+        <input type="text" name="review" placeholder="> ENTER REVIEW DATA" style="width: 300px;">
+        <input type="submit" value="SUBMIT">
+    </form>
+</body>
+</html>

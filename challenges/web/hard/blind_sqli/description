@@ -1,0 +1,29 @@
+Welcome, a Capture The Flag (CTF) challenge where your SQL injection skills
+ will be put to the test! You’re tasked 
+with breaking into a simple login portal that hides a secret flag. 
+The application uses SQLite as its backend database. 
+Unlike traditional SQLi, there’s no direct output of the query results—success or failure is your only clue. 
+Can you manipulate the login logic to uncover the flag stored in the secrets table?
+
+
+
+HINTS
+
+Hint 1: Getting Started (Basic Understanding)
+"The login form takes a username and password, but the backend doesn’t sanitize the input. Try entering something unexpected in the fields—like a single quote (')—and see how the application reacts. Does it crash or behave differently?"
+Hint 2: Identifying Blind SQLi (After Initial Exploration)
+"This is a blind SQL injection challenge, meaning you won’t see database errors or data dumped on the screen. Instead, the only feedback is 'Login successful!' or 'Login failed!'. Use this binary response to infer what’s happening behind the scenes."
+Hint 3: Understanding the Vulnerability (After Recognizing SQLi Potential)
+"The query looks something like SELECT * FROM users WHERE username='{input}' AND password='{input}'. If you can make this query return a row (true), you’ll get a success message. Try crafting an input that always evaluates to true, like ' OR '1'='1."
+Hint 4: Bypassing the Login (After Grasping Blind SQLi)
+"To log in without knowing the real credentials, you need the query to return a valid row. What happens if you enter admin as the username and ' OR '1'='1 as the password? Does it let you in? If not, tweak it until it does."
+Hint 5: Thinking Beyond Login (After Successful Bypass)
+"Logging in as 'admin' is a good start, but where’s the flag? The users table only has usernames and passwords. Check the database setup—there’s another table called secrets. How might you use SQL injection to peek into it?"
+Hint 6: Crafting a Payload (After Identifying the Goal)
+"Since this is blind SQLi, you can’t see the flag directly, but you can test conditions. Try modifying the query to check the secrets table. For example, use a UNION or a subquery to guess the flag character by character based on the success/failure response."
+Hint 7: Advanced Blind SQLi Technique (After Struggling with Payloads)
+"One way to extract the flag is with a boolean-based approach. Inject something like admin' AND SUBSTRING((SELECT flag FROM secrets), 1, 1) = 'F into the username field. If it says 'Login successful!', you know the first character is 'F'. Keep going!"
+Hint 8: Automation Suggestion (After Manual Attempts)
+"Guessing the flag one character at a time can take forever. Write a script (Python, Bash, etc.) to automate the process. Loop through possible characters and use the app’s response to build the flag step by step."
+Hint 9: Final Nudge (Close to Giving Up)
+"The flag starts with FLAG{ and is stored in the secrets table. Use a payload like admin' AND SUBSTRING((SELECT flag FROM secrets), {position}, 1) = '{char} to extract it. The full flag is 25 characters long. You’re almost there!"

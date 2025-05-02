@@ -1,0 +1,25 @@
+CRYPTO
+---------------
+3PAD: FLAG{ReusedKeysAreBadNews}
+BASE645: FLAG{base64_jungle_explorer}
+BASE5864: FLAG{This_is_B5E_58}  (first decode b64 then b58)
+binary: FLAG{3verything_1n_0_1} (wave-0, crest-1 decode)
+hill: FLAG{Climb_The_Hill_To_Win}
+morse: FLAG{U_KNOW_MORSE!!}
+rot2013: FLAG{the_tower_of_the_silent_sea}
+viz91: FLAG{Vig_En3ere_6yPheR}   (first viz then b91)
+
+--------------------
+forensics
+-------------------
+audio_stego: FLAG{Hidden_In_SounD}
+base64img: FLAG{U_WANT_ImAGE}
+echoes_of_breach: FLAG{1cmp_3xfil_hiDd3n_1n_typ3}
+hidden_secrets: flag{metadata_detective}
+m_audio: F L A G {T H I S I S M O R S E A U D I O} (Not case sensitive)
+
+---------------
+reverse
+---------------
+crackit: FLAG{REv_0bfuscate}
+crackitv2: FLAG{Super_Hard_Rev_CTF}

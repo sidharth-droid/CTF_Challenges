@@ -1,0 +1,28 @@
+Welcome to Paradise Access Terminal, a restricted system where only authorized users can retrieve classified information. However, there seems to be a vulnerability in how user authentication is handled.
+
+Your mission is to bypass authentication and retrieve the hidden flag stored within the system. Are you ready to break into Paradise?
+
+HINTS
+
+Think about the guest account.
+
+The system has a guest:guest login.
+
+Maybe you can log in as guest and then manipulate the cookies.
+
+Look at how cookies are handled.
+
+The system stores the username in Base64 inside a cookie.
+
+You don’t need to crack passwords—maybe just modify cookies!
+
+💡 Check flag.php?debug=true.
+
+What does this debug mode do? Does it reveal useful information?
+
+
+💡 Base64 Encoding/Decoding
+
+The system encodes usernames in Base64 (base64_encode($u)).
+
+Can you encode a different username and replace your cookie value?

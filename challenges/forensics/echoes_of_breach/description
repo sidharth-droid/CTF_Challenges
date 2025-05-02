@@ -1,0 +1,13 @@
+Late last night, our network sensors flagged unusual traffic leaving 
+the server at 192.168.1.100. An intruder breached our defenses and 
+exfiltrated critical data, but their method is unclear. We’ve captured 
+the traffic in a PCAP file—your job is to figure out how they did it and 
+recover what they stole. The flag is hidden in the evidence, waiting to 
+be uncovered.
+
+File: breach.pcapng
+
+
+Hint:
+
+The echoes of the breach aren’t in the usual places—look beyond the payload to the signals themselves.

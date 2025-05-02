@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Neon Vault - Hack the System</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="terminal-container">
+        <div class="terminal-header">
+            <span>NeonVault v2.3.1 - Secure Access Terminal</span>
+            <div class="terminal-buttons">
+                <span class="btn red"></span>
+                <span class="btn yellow"></span>
+                <span class="btn green"></span>
+            </div>
+        </div>
+        <div class="terminal-body">
+            <div class="terminal-text">
+                <p class="prompt">root@neonvault:~$ whoami</p>
+                <p class="output">intruder</p>
+                <p class="prompt">root@neonvault:~$ system_status</p>
+                <p class="output">
+                    [SYSTEM] Neon Vault Online<br>
+                    [SECURITY] Firewall: Active | Encryption: AES-256<br>
+                    [ALERT] Unauthorized access detected at 03:27:15 UTC<br>
+                    [OBJECTIVE] Infiltrate the vault to retrieve the secret key.<br>
+                    [HINT] The vault's access point is hidden in plain sight.<br>
+                </p>
+                <p class="prompt">root@neonvault:~$ <a class="cmd-link" href="getflag.php">access_vault --key</a></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

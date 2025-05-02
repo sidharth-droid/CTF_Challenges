@@ -1,0 +1,27 @@
+easy
+
+cookie_monster = FLAG{cookie_monster_loves_admin_cookies}
+
+flagcombined = FLAG{ExPl0r3_Th3_Un1v3rS3_2_D1sc0v3r}
+
+Treasure = FLAG{HiddenTreAsuReFound}
+
+Medium
+
+cookie_64 = FLAG{U_f0unD_IT}
+
+echoes_of_machine = FLAG{LLM_OUTPUT_G0NE_WILD}
+
+flagnet = FLAG{U_Conquered_The_neT}
+
+Hard
+
+blind_sqli = FLAG{blind_sql_bandit_win}
+
+cookie_inc  = FLAG{c00k13_m0nst3r_g0t_th3_cr0mb5}
+
+polluted_url = FLAG{P0llut3d_Adm1n}
+
+ssti = FLAG{ssti_tinkerer_win}
+
+xxe = FLAG{XML_Is_Always_There_But_Hidden}

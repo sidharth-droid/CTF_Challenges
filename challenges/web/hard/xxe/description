@@ -1,0 +1,14 @@
+The web application accepts XML input and processes it, extracting user details like name and age. However, there is a hidden mechanism that grants access to a special flag if certain conditions are met.
+
+Your task is to find a way to retrieve the real flag by exploiting the way the server processes XML.
+
+HINTS
+Think like an attacker – What happens when you control the XML structure?
+
+The app checks if you are an "admin" and checks for secret.
+
+Is there a hidden field? Try adding different elements inside the XML to see if you get a different response.
+
+Experiment with XML entities and hidden attributes – Sometimes, what you don’t see is more important than what you do see.
+
+The application uses a standard XML parser – Is there a way to manipulate it?

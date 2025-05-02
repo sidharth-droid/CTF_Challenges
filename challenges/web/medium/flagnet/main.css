@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body, html {
+    background: #0a0a0a;
+    color: #00ffcc;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(45deg, #0a0a0a, #1a1a1a);
+}
+
+.terminal-container {
+    width: 800px;
+    height: 500px;
+    background: #1a1a1a;
+    border: 2px solid #00ffcc;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 255, 204, 0.3);
+    display: flex;
+    flex-direction: column;
+}
+
+.terminal-header {
+    background: #333;
+    padding: 0.5rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #00ffcc;
+}
+
+.terminal-header span {
+    color: #e0e0e0;
+    font-size: 0.9rem;
+}
+
+.terminal-buttons .btn {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-left: 8px;
+}
+
+.btn.red { background: #ff5555; }
+.btn.yellow { background: #ffaa00; }
+.btn.green { background: #55ff55; }
+
+.terminal-body {
+    flex: 1;
+    padding: 1rem;
+    overflow-y: auto;
+    background: #0a0a0a;
+}
+
+.terminal-text {
+    line-height: 1.5;
+}
+
+.prompt {
+    color: #00ffcc;
+    margin-bottom: 0.5rem;
+}
+
+.output {
+    color: #e0e0e0;
+    margin-bottom: 1rem;
+}
+
+.output.error {
+    color: #ff5555;
+}
+
+.cmd-link {
+    color: #ff00ff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.cmd-link:hover {
+    color: #00ffcc;
+    text-decoration: underline;
+}

@@ -1,0 +1,17 @@
+You’ve stumbled upon a futuristic e-commerce website that uses an AI-powered language model to generate product descriptions and customer responses. The featured product, Quantum Widget, has cutting-edge technology, but something seems off…
+
+The AI model also pulls user-submitted reviews into its responses. However, if manipulated correctly, it might accidentally leak hidden internal data.
+
+Your goal is to extract the hidden flag by finding a way to influence the AI’s output.
+
+
+
+HINTS
+
+Explore the review submission feature – Can you inject something that influences the model's output?
+
+Look at the response conditions – The system includes reviews in the response if the query mentions them.
+
+The /admin/flag route exists but is restricted to local requests. Is there a way to make the model reveal this data indirectly?
+
+Internal references – Certain keywords in reviews, like fetch_internal_info() or /admin/flag, may lead to unintended behavior.

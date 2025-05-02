@@ -1,0 +1,12 @@
+In the shadowed corridors of espionage, our operatives have intercepted a series of encrypted transmissions from a notorious enemy syndicate known as The Silent Order. Their communications are shrouded in secrecy, encrypted with what they believed was an unbreakable XOR one-time pad system. But whispers from the underground suggest a fatal flaw: the pad has been reused across multiple messages, a mistake that could unravel their entire operation.
+
+Our mole risked everything to smuggle out three encrypted messages—designated C1, C2, and C3—along with a critical piece of intelligence: the plaintext of the second message, P2. This fragment of their scheme reads: "Used an invisble material". With this key in hand, we need you to break their encryption and recover the full plaintext of the other two messages. Somewhere within lies the flag—a codeword that could dismantle their network once and for all.
+
+Your mission: analyze the ciphertexts, exploit the pad’s weakness, and extract the secrets hidden within. The clock is ticking, and The Silent Order’s eyes are everywhere. Can you hear the echoes of their mistake and turn it against them?
+
+Provided Files:
+
+c1: First encrypted message (45 bytes)
+c2: Second encrypted message (47 bytes)
+c3: Third encrypted message (26 bytes)
+p2: Known plaintext of the second message (47 bytes)

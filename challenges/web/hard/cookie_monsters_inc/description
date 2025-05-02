@@ -1,0 +1,11 @@
+Welcome to Cookie Monster, a Capture The Flag (CTF) challenge where your 
+web exploitation skills will be put to the test! You’re infiltrating a feedback 
+system for "TechCorp," a company with a poorly secured admin dashboard. The app 
+allows users to submit feedback, but the real prize—the flag—is hidden behind an 
+admin-only page. Rumor has it the sanitization is weak, and the admin authentication 
+relies on something crumbly… . Can you munch your way to the flag?
+
+
+
+HINT 1: /admin/dashboard
+HINT 2: The admin dashboard uses a cookie called admin_session to grant access to authenticated_admin. 

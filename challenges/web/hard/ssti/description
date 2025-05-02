@@ -1,0 +1,11 @@
+Welcome to Template Tinkerer, a Capture The Flag (CTF) challenge where your template manipulation skills will be tested! You’ve stumbled upon an "Admin Greeting Customizer" that lets you craft personalized greetings. It’s powered by Flask and Jinja2, but the admin didn’t secure it properly. Rumor has it there’s a way to tinker with the templates and unlock more than just a friendly hello—perhaps even a flag! Can you inject your way to victory?
+
+HINTS
+
+Hint 1: Getting Started (Basic Exploration)
+"The form lets you customize a greeting, and it shows the result below. Try submitting something simple like Hello, {{ name }}! or Hi there!. Does it display as expected? Now, what if you add something unusual?"
+
+Hint 2: Exploring Objects (After Confirming SSTI)
+"Jinja2 templates can access Python objects. Try {{ name.__class__ }} to see what type name is. If it shows <class 'str'>, you’re in business. Now, how can you dig deeper into the environment?"
+Hint 3: Accessing Sensitive Data (After Grasping SSTI)
+"You’re looking for a flag or something juicy. Templates can sometimes reach global objects. Try {{ self }} or {{ config }} to peek at what’s available. Does anything useful pop up, like Flask’s app config?"

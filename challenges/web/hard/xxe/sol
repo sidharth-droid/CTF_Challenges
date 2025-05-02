@@ -1,0 +1,5 @@
+<root>
+    <name>user</name>
+    <age>25</age>
+    <admin_secret>flag</admin_secret>
+</root>

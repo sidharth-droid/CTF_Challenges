@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cookie Monster Challenge</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            background: white;
+            padding: 2rem 3rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            max-width: 400px;
+            width: 90%;
+        }
+
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 1.5rem;
+            font-size: 2.2rem;
+            font-weight: 600;
+        }
+
+        p {
+            color: #34495e;
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin-bottom: 1.5rem;
+        }
+
+        .status-badge {
+            background: #e74c3c;
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            display: inline-block;
+            font-weight: 500;
+            margin-bottom: 1.5rem;
+        }
+
+        .hint {
+            font-size: 0.9rem;
+            color: #7f8c8d;
+            font-style: italic;
+        }
+
+        .cookie-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="cookie-icon">🍪</div>
+        <h1>Security Check</h1>
+        <div class="status-badge">Guest Access</div>
+        <p>You are currently browsing as a guest.</p>
+        <p>Only administrators can access the secret flag at <strong>/admin</strong></p>
+        <p class="hint">Hint: Sometimes cookies hold the key to elevated privileges...</p>
+    </div>
+</body>
+</html>

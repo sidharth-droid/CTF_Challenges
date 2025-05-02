@@ -1,0 +1,7 @@
+You've encountered a mysterious web server that immediately redirects you to another page. At first glance, nothing seems out of the ordinary—just a standard redirection. However, the real treasure isn't on the webpage;
+
+
+HINTS
+
+💡 Use browser developer tools (Network tab) to inspect the request.
+💡 Try using curl or Postman to make a request and examine headers.
