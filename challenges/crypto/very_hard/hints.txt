@@ -1,0 +1,5 @@
+1) Focus on the CX gates in the quantum circuit. Each "cx q[a], q[b]" represents a relationship where input qubit a affects output qubit b. The pattern of these relationships encodes the secret period.
+
+2) The period is 6 bits long. For each input qubit (0-3), check if it affects an odd number of output qubits (4-5). If yes, that bit position is 1 in the period. This gives you the first 4 bits. 
+
+3) From the CX gates: q0→1 (affects both), q1→1 (affects q4), q2→1 (affects q5), q3→1 (affects both). So period starts with 1011. The complete period is 101101.
