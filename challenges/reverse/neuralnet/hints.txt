@@ -1,0 +1,12 @@
+Hints:
+
+Hint 1 (cost: 75 points): "The model uses dynamic computation graphs and custom CUDA kernels"
+
+Hint 2 (cost: 150 points): "Some weights are encoded as floating point numbers that represent ASCII when interpreted differently"
+
+Hint 3 Final Hint:
+The model uses these custom layers. The flag is hidden in the model parameters, 
+but the extraction method requires understanding what these layers actually do.
+Pay attention to weight initialization and forward pass simplicity.
+
+[Show the __init__.py code here]

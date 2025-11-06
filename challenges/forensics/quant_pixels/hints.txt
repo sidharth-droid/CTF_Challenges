@@ -1,0 +1,5 @@
+Hint 1 (50 points): "The embedding uses Learning With Errors (LWE) in the frequency domain"
+
+Hint 2 (100 points): "Look for patterns in the least significant bits of specific color channels"
+
+

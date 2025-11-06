@@ -1,0 +1,7 @@
+Title: "The AI's Secret"
+
+Category: Reverse Engineering
+
+Points: 750
+
+Description: "We've trained a neural network that contains a secret flag within its weights and architecture. The network is heavily obfuscated and uses custom operations. Can you extract the flag?"
