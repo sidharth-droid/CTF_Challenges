@@ -1,0 +1,15 @@
+Challenge: VMception
+Description: Find the vulnerable research paper about nested virtualization, 
+then exploit the described vulnerability against our test server. 
+The flag is in the hypervisor memory.
+
+Connection: nc <IP> 8030
+(or your actual server IP)
+
+Note: You'll need to:
+1. Find the specific research paper about nested virtualization vulnerabilities
+2. Understand the triple fault handling mechanism
+3. Implement the escape sequence
+4. Extract the flag from hypervisor memory
+
+Good luck!

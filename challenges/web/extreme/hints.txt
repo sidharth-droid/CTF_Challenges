@@ -1,0 +1,2 @@
+1) "The vulnerability involves improper handling of triple faults in nested virtualization environments. Research AMD-V nested paging vulnerabilities from 2018-2019 security conferences."
+2) "The magic hypercall values that trigger the escape sequence are common exploit developer constants often used in proof-of-concept code."

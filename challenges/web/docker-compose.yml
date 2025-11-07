@@ -91,3 +91,12 @@ services:
     ports:
       - "8025:5000"
     restart: unless-stopped
+  
+  vm_escape:
+    build:
+      context: ./extreme/vm_escape
+      dockerfile: Dockerfile
+    ports:
+      - "8030:4444"
+    restart: unless-stopped
+    container_name: vm_escape
